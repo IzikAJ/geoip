@@ -14,10 +14,11 @@ docker-compose up
 
 TODO: Write usage instructions here
 
-## TODO
+## DONE
 - CORS headers
+## TODO
 - cache
-
+- attacks protection
 ## Development
 
 TODO: Write development instructions here
