@@ -5,3 +5,4 @@
 *.yml
 !shard.yml
 sentry*
+.DS_Store
