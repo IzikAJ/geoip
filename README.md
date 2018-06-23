@@ -2,6 +2,11 @@
 
 TODO: Write a description here
 
+image size:
+- 363MB
+- 370MB
+- 367MB
+
 ## Installation
 
 TODO: Write installation instructions here
@@ -16,6 +21,7 @@ TODO: Write usage instructions here
 
 ## DONE
 - CORS headers
+
 ## TODO
 - cache
 - attacks protection
