@@ -6,3 +6,5 @@
 !shard.yml
 sentry*
 .DS_Store
+/geoip
+/geoip.*
