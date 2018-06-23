@@ -1,5 +1,9 @@
 version: 1.0
 shards:
+  http-protection:
+    github: rogeriozambon/http-protection
+    commit: 2638b64baa4cd2aa7e61438ad61a239634f24beb
+
   ipaddress:
     github: sija/ipaddress.cr
     version: 0.1.2

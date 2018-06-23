@@ -17,4 +17,7 @@ dependencies:
   maxminddb:
     github: delef/maxminddb.cr
 
+  http-protection:
+    github: rogeriozambon/http-protection
+
 license: MIT

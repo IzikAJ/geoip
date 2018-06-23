@@ -28,8 +28,11 @@ end
 
 mmdb = MaxMindDB::GeoIP2.new("#{__DIR__}/../vendor/GeoLite2-City.mmdb")
 
-get "/geocode.json" do |ctx|
-  result = mmdb.lookup(ctx.remote_ip || "127.0.0.1")
+add_handler CORSHandler.new
+
+get "/geocode.json" do |env|
+  env.response.content_type = "application/json"
+  result = mmdb.lookup(env.remote_ip || "127.0.0.1")
   render_result_json(result)
 end
 
