@@ -1,5 +1,5 @@
 FROM alpine
-MAINTAINER izikaj@gamil.com
+MAINTAINER izikaj@gmail.com
 
 RUN apk update && apk upgrade --available \
  && echo http://public.portalier.com/alpine/testing >> /etc/apk/repositories \
