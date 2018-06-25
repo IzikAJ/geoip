@@ -17,9 +17,8 @@ dependencies:
   maxminddb:
     github: delef/maxminddb.cr
 
-  db:
-    github: crystal-lang/crystal-db
-  pg:
-    github: will/crystal-pg
+  redis:
+    github: stefanwille/crystal-redis
+    version: ~> 2.0.0
 
 license: MIT

@@ -2,8 +2,11 @@
 /lib/
 /bin/
 /.shards/
+
 *.yml
 !shard.yml
+!vendor/*.yml
+
 sentry*
 .DS_Store
 /geoip
