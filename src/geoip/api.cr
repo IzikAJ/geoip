@@ -10,7 +10,7 @@ module Geoip
     property updates : Modificator
 
     def initialize
-      @mmdb = MaxMindDB::GeoIP2.new("#{Geoip::App.root}/vendor/GeoLite2-City.mmdb")
+      @mmdb = MaxMindDB::GeoIP2.new("#{Geoip::App.root}/vendor/GeoLite2-Country.mmdb")
       @redis = Redis.new("127.0.0.1", 6379, nil, nil, 0, ENV["REDIS_URL"]?)
       @cache = Geoip::CacheIp.new(@redis)
 
@@ -44,7 +44,7 @@ module Geoip
           ip:      remote_ip,
           error:   "invalid",
           message: ex.message,
-        }.to_json
+        }.to_h
       end
     end
   end

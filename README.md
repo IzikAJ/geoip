@@ -6,6 +6,7 @@ image size:
 - 363MB
 - 370MB
 - 367MB
+- 315MB 👏
 
 ## Installation
 
