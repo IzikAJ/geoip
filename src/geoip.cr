@@ -5,10 +5,8 @@ require "kemal"
 require "json"
 require "maxminddb"
 require "redis"
-redis = Redis.new("redis")
-redis.set("foo", "bar")
-redis.get("foo")
 
+redis = Redis.new("redis")
 # 20 seconds
 EXPIRE_TIMEOUT = 20 * 60
 
