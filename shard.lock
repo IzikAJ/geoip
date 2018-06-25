@@ -4,6 +4,10 @@ shards:
     github: sija/ipaddress.cr
     version: 0.1.2
 
+  kave:
+    github: jwoertink/kave
+    version: 0.3.1
+
   kemal:
     github: kemalcr/kemal
     version: 0.22.0

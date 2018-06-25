@@ -14,7 +14,7 @@ module Geoip
       if chached = @redis.get("#{PREFIX}#{ip}")
         chached
       else
-        value = yield
+        value = yield.to_json
         @redis.setex("#{PREFIX}#{ip}", EXPIRE_TIMEOUT, value)
         value
       end

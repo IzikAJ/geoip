@@ -13,12 +13,12 @@ services:
 
   app:
     build: .
-    # command: "shards update && crystal run src/geoip.cr"
+    image: izikaj/geoip
     command: sh -c "bin/geoip"
     ports:
       - '3000:3000'
     environment:
-      - RHOST=redis
+      - REDIS_URL=redis://redis:6379/11
     volumes:
       - .:/home/app
       - maxminddb-data:/home/app/vendor

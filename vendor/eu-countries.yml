@@ -1,41 +1,36 @@
+version: 1
+strategy: replace
 in_eu:
+  - AT
+  - AX
   - BE
   - BG
-  - CZ
-  - DK
-  - DE
-  - EE
-  - IE
-  - EL
-  - ES
-  - FR
-  - HR
-  - IT
   - CY
-  - LV
+  - CZ
+  - DE
+  - DK
+  - EE
+  - ES
+  - FI
+  - FO
+  - FR
+  - GB
+  - GF
+  - GI
+  - GR
+  - HR
+  - HU
+  - IE
+  - IM
+  - IT
   - LT
   - LU
-  - HU
+  - LV
   - MT
   - NL
-  - AT
   - PL
   - PT
   - RO
+  - SE
   - SI
   - SK
-  - FI
-  - SE
-  - UK
-
-in_efta:
-  - IS
-  - LI
-  - NO
-  - CH
-
-eu_candidates:
-  - ME
-  - AL
-  - RS
-  - TR
