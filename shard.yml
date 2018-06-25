@@ -17,7 +17,9 @@ dependencies:
   maxminddb:
     github: delef/maxminddb.cr
 
-  http-protection:
-    github: rogeriozambon/http-protection
+  db:
+    github: crystal-lang/crystal-db
+  pg:
+    github: will/crystal-pg
 
 license: MIT
