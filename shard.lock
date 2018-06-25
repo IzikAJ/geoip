@@ -1,9 +1,5 @@
 version: 1.0
 shards:
-  db:
-    github: crystal-lang/crystal-db
-    version: 0.5.0
-
   ipaddress:
     github: sija/ipaddress.cr
     version: 0.1.2
@@ -20,11 +16,15 @@ shards:
     github: delef/maxminddb.cr
     version: 0.6.4
 
-  pg:
-    github: will/crystal-pg
-    version: 0.15.0
+  pool:
+    github: ysbaddaden/pool
+    version: 0.2.3
 
   radix:
     github: luislavena/radix
     version: 0.3.8
+
+  redis:
+    github: stefanwille/crystal-redis
+    version: 2.0.0
 

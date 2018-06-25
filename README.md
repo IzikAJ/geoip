@@ -24,6 +24,7 @@ TODO: Write usage instructions here
 - cache (redis)
 
 ## TODO
+- fetch ipdb on build
 - attacks protection
 - [authorization](https://github.com/akwiatkowski/kemal-auth-token)
 - additional params managment
