@@ -25,6 +25,11 @@ TODO: Write usage instructions here
 ## TODO
 - cache
 - attacks protection
+- [authorization](https://github.com/akwiatkowski/kemal-auth-token)
+- additional params managment
+- build flexible api with [Kave](https://github.com/jwoertink/kave)
+- add [device detection](https://github.com/creadone/device_detector)
+
 ## Development
 
 TODO: Write development instructions here
