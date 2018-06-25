@@ -1,8 +1,8 @@
 version: 1.0
 shards:
-  http-protection:
-    github: rogeriozambon/http-protection
-    commit: 2638b64baa4cd2aa7e61438ad61a239634f24beb
+  db:
+    github: crystal-lang/crystal-db
+    version: 0.5.0
 
   ipaddress:
     github: sija/ipaddress.cr
@@ -19,6 +19,10 @@ shards:
   maxminddb:
     github: delef/maxminddb.cr
     version: 0.6.4
+
+  pg:
+    github: will/crystal-pg
+    version: 0.15.0
 
   radix:
     github: luislavena/radix

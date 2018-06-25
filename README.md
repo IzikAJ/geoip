@@ -21,9 +21,9 @@ TODO: Write usage instructions here
 
 ## DONE
 - CORS headers
+- cache (redis)
 
 ## TODO
-- cache
 - attacks protection
 - [authorization](https://github.com/akwiatkowski/kemal-auth-token)
 - additional params managment
