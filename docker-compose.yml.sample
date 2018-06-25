@@ -1,11 +1,35 @@
 version: "3"
 services:
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    hostname: redis
+    networks:
+      - backend
+    restart: always
+
   app:
     build: .
+    # command: "shards update && crystal run src/geoip.cr"
     command: sh -c "bin/geoip"
     ports:
       - '3000:3000'
     environment:
-      - TODO=todo
+      - RHOST=redis
     volumes:
       - .:/home/app
+      - maxminddb-data:/home/app/vendor
+    networks:
+      - backend
+    depends_on:
+      - redis
+
+volumes:
+  maxminddb-data:
+  redis-data:
+
+networks:
+  backend:
