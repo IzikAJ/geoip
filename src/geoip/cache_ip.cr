@@ -14,7 +14,7 @@ module Geoip
       cursor, found_keys = @redis.scan(0, "geocode_*")
       if keys = found_keys.as(Array(Redis::RedisValue))
         keys.each do |key|
-          @redis.del key.as_s
+          @redis.del key.as(String)
         end
       end
     end
