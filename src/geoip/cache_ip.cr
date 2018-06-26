@@ -10,6 +10,12 @@ module Geoip
       @redis ||= Redis.new
     end
 
+    def clear
+      @redis.scan(0, "geocode_*").each do |key|
+        @redis.del key
+      end
+    end
+
     def fetch(ip : String)
       if chached = @redis.get("#{PREFIX}#{ip}")
         chached

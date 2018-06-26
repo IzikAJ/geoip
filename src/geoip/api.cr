@@ -14,6 +14,7 @@ module Geoip
       @redis = Redis.new("127.0.0.1", 6379, nil, nil, 0, ENV["REDIS_URL"]?)
       @cache = Geoip::CacheIp.new(@redis)
 
+      cache.clear
       @updates = Modificator.new("eu-countries", redis)
 
       add_handler CORSHandler.new
