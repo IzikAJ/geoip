@@ -3,7 +3,8 @@ require "ipaddress"
 
 class HTTP::Server::Context
   CLIENT_IP_HEADERS = %w(
-    CLIENT_IP
+    X_Real_IP
+    X_Forwarded_For
     X_REAL_IP
     X_FORWARDED_FOR
     X_CLUSTER_CLIENT_IP
