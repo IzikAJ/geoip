@@ -26,7 +26,8 @@ module Geoip
         remote_ip = env.params.query["ip"]? || env.remote_ip || "127.0.0.1"
 
         cache.fetch remote_ip do
-          fetch_geodata(remote_ip)
+          data = fetch_geodata(remote_ip).to_h
+          data.merge({headers: env.request.headers.inspect}.to_h)
         end
       end
     end
