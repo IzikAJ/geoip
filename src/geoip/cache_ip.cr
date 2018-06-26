@@ -11,8 +11,11 @@ module Geoip
     end
 
     def clear
-      @redis.scan(0, "geocode_*").each do |key|
-        @redis.del key
+      cursor, found_keys = @redis.scan(0, "geocode_*")
+      if keys = found_keys.as(Array(Redis::RedisValue))
+        keys.each do |key|
+          @redis.del key.as_s
+        end
       end
     end
 
