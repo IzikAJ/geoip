@@ -13,7 +13,7 @@ module Geoip
     def clear
       cursor, found_keys = @redis.scan(0, "geocode_*")
       if keys = found_keys.as(Array(Redis::RedisValue))
-        puts "CLEAR CACHE"
+        puts "CLEAR CACHE: #{keys.size} ITEMS"
         keys.each do |key|
           puts "DEL #{key}"
           @redis.del "#{key}"
