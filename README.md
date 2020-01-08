@@ -1,3 +1,8 @@
+# GeoIP lookup service written on [Crystal](https://crystal-lang.org/)
+**DEPRECATED: Preffer to use lambda service: https://github.com/izikaj/go-lambda-geoip**
+Or some else 😅
+But if you want contribute to this project - always welcome.
+
 # geoip
 
 TODO: Write a description here
